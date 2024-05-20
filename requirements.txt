@@ -5,6 +5,7 @@ streamlit-modal==0.0.5
 streamlit-option-menu==0.3.2
 textblob==0.17.1
 nltk==3.6.5
+vaderSentiment==3.3.2
 fer==22.4.0
 flair==0.11.1
 requests==2.27.1
