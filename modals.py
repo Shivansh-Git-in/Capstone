@@ -12,11 +12,11 @@ emo_detector = FER(mtcnn=True)
 
 # For Text data
 def flair(text):
-    sentence = Sentence(text)
-    sia.predict(sentence)
-    score = str(sentence.labels[0])
-    startIdx = int(score.rfind("("))
-    endIdx = int(score.rfind(")"))
+    sentence = Sentence(text)    #covert text tpo sentence
+    sia.predict(sentence)        #predict sentiment
+    score = str(sentence.labels[0])   #predict labels and confidence score
+    startIdx = int(score.rfind("("))   #last occurance of ( to locate start of confidence score
+    endIdx = int(score.rfind(")"))     #last occurance of ) to locate end of confidence score
     percentage = float(score[startIdx+1:endIdx])
     if percentage < 0.60:
         return "NEUTRAL"
