@@ -18,3 +18,4 @@ sacremoses==0.0.53
 gensim==4.1.2
 scipy==1.8.0
 googletrans==4.0.0-rc1
+asyncio==3.4.3
