@@ -1,0 +1,7 @@
+streamlit
+textblob
+Pillow
+vaderSentiment
+flair
+numpy
+streamlit-option-menu
